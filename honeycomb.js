@@ -42,3 +42,7 @@ function fit_hexagons(distance, width, length) {
         ];
     }
 }
+
+// Required for test suite
+exports.fit_hexagons = fit_hexagons;
+exports.isNumber = isNumber;
