@@ -4,28 +4,37 @@
     <title>Honeycomb</title>
     <script src="honeycomb.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/footer.css" rel="stylesheet" media="screen">
   </head>
   <body>
-    <div class="container">
-      <div class="hero-unit">
-        <h1>Honeycomb layout calculator</h1>
-      </div>
-      <div class="row">
-        <div class="span2"></div>
-        <div class="span4">
-          <form>
-            <label for="distance">Distance between plants</label>
-            <input type="number" name="distance" id="distance" /><br />
-            <label for="width">Width of bed</label>
-            <input type="number" name="width" id="width"  /><br />
-            <label for="width">Length of bed</label>
-            <input type="number" name="length" id="length" /><br />
-            <input type="button" class="btn" value="Calculate!"
-                   onclick="update_output()">
-          </form>
-        </div>
-        <div class="span4" id="output" />
-      </div>
-    </div>
+    <div id="wrap">
+      <div class="container">
+        <div class="hero-unit">
+          <h1>Honeycomb layout calculator</h1>
+        </div> <!-- hero-unit -->
+        <div class="row">
+          <div class="span2"></div>
+          <div class="span4">
+            <form>
+              <label for="distance">Distance between plants</label>
+              <input type="number" name="distance" id="distance" /><br />
+              <label for="width">Width of bed</label>
+              <input type="number" name="width" id="width"  /><br />
+              <label for="width">Length of bed</label>
+              <input type="number" name="length" id="length" /><br />
+              <input type="button" class="btn" value="Calculate!"
+                     onclick="update_output()">
+            </form>
+          </div> <!-- span4 -->
+          <div class="span4" id="output" >
+          </div> <!-- span4 -->
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </div> <!-- wrap -->
+    <div id="footer">
+      <div class="container">
+        Hosted by <a href="http://greenqloud.com">GreenQloud</a>
+      </div> <!-- container -->
+    </div> <!-- footer -->
   </body>
 </html>
